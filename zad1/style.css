@@ -1,0 +1,64 @@
+:root {
+  --offset: 4px;
+  --radius: 10px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#div1 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: tomato;
+  border-color: rosybrown;
+  border-radius: var(--radius);
+}
+
+#div2 {
+  left: var(--offset);
+  top: var(--offset);
+  background-color: seagreen;
+  border-color: springgreen;
+  border-radius: var(--radius) 0 0 0;
+}
+
+#div3 {
+  right: var(--offset);
+  top: var(--offset);
+  background-color: orange;
+  border-color: peru;
+  border-radius: 0 var(--radius) 0 0;
+}
+
+#div4 {
+  left: var(--offset);
+  bottom: var(--offset);
+  background-color: aquamarine;
+  border-color: aqua;
+  border-radius: 0 0 0 var(--radius);
+}
+
+#div5 {
+  right: var(--offset);
+  bottom: var(--offset);
+  background-color: khaki;
+  border-color: darkkhaki;
+  border-radius: 0 0 var(--radius) 0;
+}
