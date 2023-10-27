@@ -36,5 +36,9 @@ img {
 p {
 	display: inline;
 	position: relative;
-	top: -50px;
+	clear: both;
+}
+
+div {
+	clear: both;
 }
